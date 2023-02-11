@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+  @include tablet {
+    padding: 60px 0;
+  }
+  @include desktop {
+    padding: 94px 0;
+  }
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+button {
+  cursor: pointer;
+}
